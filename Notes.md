@@ -4,3 +4,8 @@
 
 123 -> 6 (1 + 2 + 3)
 100 -> 1 (1 + 0 + 0) |
+
+user_num = int(input("Введите число: "))
+sum = 0
+while user_num>0:
+    sum+=user_num%10
