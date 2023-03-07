@@ -3,11 +3,11 @@
 
 
 Вариант заполнения списка:
-# chars_n = list()
-# for i in range(size_n):
-#     n = int(input())
-#     chars_n.append(n)
-# print(chars_n)
+<!-- chars_n = list()
+for i in range(size_n):
+     n = int(input())
+     chars_n.append(n)
+print(chars_n) -->
 
 Решение с сайта:
 <!-- mol = [int(x) for x in input().split()]
