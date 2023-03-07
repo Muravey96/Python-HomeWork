@@ -14,3 +14,13 @@ print(chars_m)
 # объединенное множество с пересекающимися значениями. 
 
 print(sorted(chars_n.intersection(chars_m)))
+
+""" Teacher's solution 
+
+n, m = input().split() 
+first = [int(i) for i in input().split()] # тут целочисленные списки
+second = [int(j) for j in input().split()]
+
+print(*sorted(set(first).intersection(second))) # если убрать * перед sorted, то вернется просто список.
+# так же сортировка sorted от минимального к максимальному - это его классическая работа
+"""
