@@ -3,11 +3,12 @@
 
 
 Вариант заполнения списка:
-<!-- chars_n = list()
+
+chars_n = list()
 for i in range(size_n):
      n = int(input())
      chars_n.append(n)
-print(chars_n) -->
+print(chars_n) 
 
 Решение с сайта:
 <!-- mol = [int(x) for x in input().split()]
@@ -38,7 +39,7 @@ print(i, end=' ') -->
 
 Решение с сайта:
 
-<!-- n = int(input())
+n = int(input())
 arr = list()
 for i in range(n):
     x = int(input())
@@ -48,7 +49,7 @@ arr_count = list()
 for i in range(len(arr) - 1):
     arr_count.append(arr[i-1] + arr[i] + arr[i+1])
 arr_count.append(arr[-2] + arr[-1] + arr[0])
-print(max(arr_count)) -->
+print(max(arr_count))
 
 
 
