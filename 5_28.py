@@ -7,3 +7,12 @@ def numbers_sum(x, y):
     return x + numbers_sum(x, y -1)
 
 print(numbers_sum(userNum1, userNum2))
+
+# -------------------------------------------------
+""" Teacher's var 
+def summa(a, b):
+    if b < 0 < a: a, b = b, a
+    if b == 0: return a
+    return summa(a + 1, b - 1)
+print(summa(int(input()), int(input())))
+"""
