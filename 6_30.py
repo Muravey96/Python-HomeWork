@@ -8,3 +8,11 @@ a = int(input('Введите первый элемент: '))
 diff = int(input('Введите разность : '))
 amount = int(input('Введите количество элементов: '))
 print(*sequence(a, diff, amount))
+
+# ------------Teacher's VAR -----------
+first = int(input())
+sub = int(input())
+count = int(input())
+
+for i in range(count):
+    print(first + i * sub, end=" ")
