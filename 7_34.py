@@ -15,7 +15,7 @@ def check_rhythm(text: str):
     for i in phrases:   # каждую фразу фильтруем от согласных
         phrases_clear.append(list(filter(lambda x: x in 'аеиоуэюя', list(i))))
     result = map(lambda x: len(x) == len(phrases_clear[0]), phrases_clear) # сравниваем фразы по длинне (кол-ву гласных)
-    return all(result) # вывод если true
+    return all(result) # вывод если true (подходит для оценки "пустоты")
 
 
 song = 'пара-ра-рам рам-пам-папам па-ра-па-дам'
@@ -23,3 +23,21 @@ if check_rhythm(song):
     print('Парам пам-пам')
 else:
     print('Пам парам')
+
+
+# -------------- Teacher's VAR ------------
+
+dictionary = 'аоуэыяеёюи'
+poem = input().split()
+result = [sum([True for j in word if j.lower() in dictionary]) for word in poem]
+# j - подсчет букв в слове, word - подсчет слов в поеме.
+# Мы собираем  количество раз вхождения в слово этого символа (буквы), а не сама буква, 
+# Благодоря этому у нас исключается вариант когда слова состоят только из гласных, такое слова не буду считаться
+
+print(result)
+
+if all(result) and len(set(result)) == 1: # нам нужна ф-я all потому-то без нее set разделит и len посчитает True и False и у нас 
+# все будет равно единице, будут засчитаны неподоходящие фразы. All это исключает, так как он выдает только True
+    print("Парам пам-пам")
+else:
+    print("Пам парам")
